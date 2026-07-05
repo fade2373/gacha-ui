@@ -2,6 +2,16 @@
 
 **[English](./README.md) · [中文](./README.zh-CN.md)**
 
+[![Agent Skill](https://img.shields.io/badge/Agent%20Skill-SKILL.md-111111?style=for-the-badge)](./SKILL.md)
+[![Works with](https://img.shields.io/badge/%E6%94%AF%E6%8C%81-Claude%20Code%20·%20Codex%20·%20OpenClaw-FFC93C?style=for-the-badge)](#安装)
+[![Release](https://img.shields.io/github/v/release/fade2373/gacha-ui?style=for-the-badge&color=35D07F)](https://github.com/fade2373/gacha-ui/releases)
+[![License](https://img.shields.io/badge/License-MIT-64748b?style=for-the-badge)](./LICENSE)
+
+<p align="center">
+  <img src="./promo/cover-cn.png" alt="gacha-ui 封面" width="340" />
+  <img src="./promo/preview.gif" alt="gacha-ui — 一次出 5 个版本,你来挑" width="340" />
+</p>
+
 一个用于探索 UI 方向的 agent **skill**——支持 [Claude Code](https://docs.claude.com/en/docs/claude-code)、Codex、OpenClaw、Cursor 等任何能读 `SKILL.md` 的 agent。按设计师真正收敛设计的方式来:平行生成若干个**真正不同**的 mockup,**并排**看,指认哪个对、锁住它、再收窄,一轮轮逼近到位,最后把胜出方案用真实技术栈落地。
 
 它把「让这块好看点」从*一个你只能接受或推翻的猜测*,变成*一个你能掌舵的比较*。
@@ -10,7 +20,11 @@
 
 ## 宣传片
 
-45s 介绍(中文,3:4 竖版):[`promo/gacha-ui-promo-cn.mp4`](./promo/gacha-ui-promo-cn.mp4) · 封面:[`promo/cover-cn.png`](./promo/cover-cn.png)。*(英文版后续放出。)*
+45s 介绍(中文,3:4 竖版;英文版后续放出):
+
+https://github.com/fade2373/gacha-ui/releases/download/v1.0.0/gacha-ui-promo-cn.mp4
+
+文件直达:[`promo/gacha-ui-promo-cn.mp4`](./promo/gacha-ui-promo-cn.mp4)
 
 ## 为什么不用一把梭生成
 

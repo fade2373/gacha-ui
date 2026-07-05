@@ -2,6 +2,16 @@
 
 **[English](./README.md) · [中文](./README.zh-CN.md)**
 
+[![Agent Skill](https://img.shields.io/badge/Agent%20Skill-SKILL.md-111111?style=for-the-badge)](./SKILL.md)
+[![Works with](https://img.shields.io/badge/Works%20with-Claude%20Code%20·%20Codex%20·%20OpenClaw-FFC93C?style=for-the-badge)](#install)
+[![Release](https://img.shields.io/github/v/release/fade2373/gacha-ui?style=for-the-badge&color=35D07F)](https://github.com/fade2373/gacha-ui/releases)
+[![License](https://img.shields.io/badge/License-MIT-64748b?style=for-the-badge)](./LICENSE)
+
+<p align="center">
+  <img src="./promo/cover-cn.png" alt="gacha-ui cover" width="340" />
+  <img src="./promo/preview.gif" alt="gacha-ui — deal 5 versions, you pick" width="340" />
+</p>
+
 An agent **skill** — works with [Claude Code](https://docs.claude.com/en/docs/claude-code), Codex, OpenClaw, Cursor, or any agent that reads `SKILL.md` — for exploring UI directions the way a designer actually narrows one down: generate several genuinely-different mockups in parallel, look at them **side-by-side**, point at what works, lock it, and narrow — round by round — until it's right. Then build the winner for real.
 
 It turns "make this look better" from *one guess you accept or reject* into *a comparison you steer*.
@@ -10,7 +20,11 @@ It turns "make this look better" from *one guess you accept or reject* into *a c
 
 ## Promo video
 
-45s intro (Chinese, 3:4): [`promo/gacha-ui-promo-cn.mp4`](./promo/gacha-ui-promo-cn.mp4) · cover: [`promo/cover-cn.png`](./promo/cover-cn.png). *(English version coming.)*
+45s intro (Chinese, 3:4 — English version coming):
+
+https://github.com/fade2373/gacha-ui/releases/download/v1.0.0/gacha-ui-promo-cn.mp4
+
+Direct file: [`promo/gacha-ui-promo-cn.mp4`](./promo/gacha-ui-promo-cn.mp4)
 
 ## Why this instead of one-shot generation
 
