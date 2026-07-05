@@ -10,6 +10,8 @@ description: >-
   surface where the look is unsettled. NOT for: pure logic/data bugs, a known one-line
   CSS tweak (just do it), or writing a brand-new page when the user has NOT asked to
   compare options (use frontend-design for a single high-quality draft).
+  中文触发:「这块看着廉价/不对劲」「帮我改好看点」「重新设计这块」「多出几个版本/方向对比」
+  「UI 抽卡」。不适用:一行 CSS 小改、没要求对比时写全新页面。
 ---
 
 # Gacha-UI: divergent UI design by parallel mockups + human-in-the-loop selection
