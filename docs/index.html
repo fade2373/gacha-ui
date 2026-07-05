@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>gacha-ui · AI 改 UI 总不满意?一次出 5 个版本并排挑</title>
+<meta name="description" content="gacha-ui 是一个 agent skill:让 AI 一次出 5 个真数据 HTML 版本并排挑,锁定收敛,几轮改到「就是这版」。支持 Claude Code / Codex / OpenClaw。" />
+<meta property="og:title" content="gacha-ui · 让 AI 发牌,你来挑" />
+<meta property="og:description" content="AI 改 UI 总改不到满意?一次出 5 个版本并排挑,锁定收敛。" />
+<meta property="og:image" content="https://fade2373.github.io/gacha-ui/cover-cn.png" />
+<style>
+  :root { --paper:#FAF5EC; --ink:#111; --yellow:#FFC93C; --red:#FF4A4A; --green:#35D07F; --blue:#2E6BFF; --pink:#FF7AC3; }
+  * { box-sizing: border-box; margin: 0; }
+  body { background: var(--yellow); color: var(--ink);
+    font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
+    background-image: radial-gradient(rgba(17,17,17,0.12) 2.5px, rgba(17,17,17,0) 2.5px);
+    background-size: 42px 42px; }
+  .mono { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
+  .wrap { max-width: 900px; margin: 0 auto; padding: 56px 24px 90px; }
+  .chip { display: inline-block; border: 4px solid var(--ink); border-radius: 14px;
+    box-shadow: 7px 7px 0 var(--ink); padding: 10px 22px; font-weight: 800; background: #fff; }
+  .logo-row { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+  .logo { font-size: 40px; letter-spacing: 1px; transform: rotate(-2deg); }
+  .logo i { font-style: normal; color: var(--red); }
+  .cn { background: var(--red); color: #fff; font-size: 30px; transform: rotate(2deg); }
+  h1 { font-size: clamp(34px, 6.4vw, 62px); font-weight: 900; line-height: 1.22; margin: 40px 0 18px; }
+  h1 em { font-style: normal; background: var(--ink); color: var(--yellow); padding: 2px 16px; border-radius: 12px; display: inline-block; transform: rotate(-1deg); }
+  .sub { display: inline-block; background: var(--ink); color: var(--yellow); font-weight: 800;
+    padding: 10px 20px; border-radius: 10px; font-size: 17px; transform: rotate(-0.8deg); }
+  .video-card { margin: 46px auto 0; max-width: 460px; background: #fff; border: 5px solid var(--ink);
+    border-radius: 20px; box-shadow: 12px 12px 0 var(--ink); padding: 14px; transform: rotate(-1deg); }
+  video { display: block; width: 100%; border-radius: 10px; border: 3px solid var(--ink); background: #000; }
+  .video-cap { text-align: center; font-weight: 800; font-size: 14px; padding: 10px 4px 2px; }
+  h2 { font-size: 30px; font-weight: 900; margin: 70px 0 24px; }
+  h2 .tag { display: inline-block; background: #fff; border: 4px solid var(--ink); border-radius: 12px;
+    box-shadow: 6px 6px 0 var(--ink); padding: 4px 16px; transform: rotate(-1.2deg); }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 26px; }
+  .card { background: #fff; border: 4px solid var(--ink); border-radius: 16px; box-shadow: 8px 8px 0 var(--ink); padding: 22px 24px; }
+  .card b { display: block; font-size: 20px; margin-bottom: 10px; }
+  .card p { font-size: 15px; line-height: 1.75; }
+  .card .n { display: inline-block; width: 34px; height: 34px; line-height: 30px; text-align: center;
+    border: 3px solid var(--ink); border-radius: 50%; font-weight: 900; margin-bottom: 12px; }
+  .c1 .n { background: var(--red); color: #fff; } .c2 .n { background: var(--blue); color: #fff; } .c3 .n { background: var(--green); }
+  .install { background: var(--ink); color: #fff; border-radius: 16px; border: 4px solid var(--ink);
+    box-shadow: 8px 8px 0 rgba(17,17,17,0.3); padding: 24px 26px; overflow-x: auto; }
+  .install .cmt { color: #9aa3b5; }
+  .install code { color: var(--yellow); font-size: 15px; white-space: pre; }
+  .agents { margin-top: 18px; display: flex; gap: 14px; flex-wrap: wrap; }
+  .agents .chip { font-size: 15px; padding: 8px 18px; transform: rotate(-1deg); }
+  .agents .chip:nth-child(2) { transform: rotate(1.2deg); }
+  .agents .chip:nth-child(3) { transform: rotate(-0.6deg); }
+  .links { margin-top: 74px; display: flex; gap: 18px; flex-wrap: wrap; }
+  .btn { text-decoration: none; color: var(--ink); font-weight: 900; font-size: 18px; }
+  .btn.gh { background: #fff; }
+  .btn.red { background: var(--red); color: #fff; }
+  footer { margin-top: 70px; font-size: 13px; font-weight: 700; opacity: 0.75; }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="logo-row">
+    <span class="chip logo mono">gacha<i>-</i>ui</span>
+    <span class="chip cn">抽卡</span>
+  </div>
+
+  <h1>AI 改 UI,<br/>总改不到<em>满意?</em></h1>
+  <p class="sub mono">别再许愿式改 UI · 一次出 5 个版本并排挑</p>
+
+  <div class="video-card">
+    <video src="./gacha-ui-promo-cn.mp4" controls playsinline preload="metadata" poster="./cover-cn.png"></video>
+    <div class="video-cap mono">45s 宣传片 · 真实项目实录</div>
+  </div>
+
+  <h2><span class="tag">它怎么干活</span></h2>
+  <div class="cards">
+    <div class="card c1"><span class="n">1</span><b>发牌</b><p>一次生成 5 个<strong>结构真不同</strong>的版本——真数据、真 HTML,不是同一版换五个配色。并排 serve 给你在浏览器里挑。</p></div>
+    <div class="card c2"><span class="n">2</span><b>锁定</b><p>你指哪版,就锁哪版。喜欢 A 的布局 + B 的配色?可以混。锁进账本的东西,后面每一轮都逐字保真。</p></div>
+    <div class="card c3"><span class="n">3</span><b>收敛</b><p>每轮只动一个变量,几轮就到「就是这版」——然后用真实技术栈落地,和你锁定的 mockup 做视觉 diff 精修。</p></div>
+  </div>
+
+  <h2><span class="tag">30 秒装上</span></h2>
+  <div class="install mono">
+    <code><span class="cmt"># Claude Code(其他 agent 放进各自 skills 目录即可)</span>
+git clone https://github.com/fade2373/gacha-ui ~/.claude/skills/gacha-ui
+
+<span class="cmt"># 可选:自动截图(不装也能用,画廊照常 serve)</span>
+npm i -D playwright && npx playwright install chromium</code>
+  </div>
+  <div class="agents">
+    <span class="chip mono">Claude Code</span>
+    <span class="chip mono">Codex</span>
+    <span class="chip mono">OpenClaw</span>
+    <span class="chip mono">Cursor</span>
+  </div>
+
+  <div class="links">
+    <a class="btn chip gh" href="https://github.com/fade2373/gacha-ui">GitHub 仓库 →</a>
+    <a class="btn chip red" href="https://github.com/fade2373/gacha-ui/releases">下载 Release →</a>
+  </div>
+
+  <footer>gacha-ui · MIT License · 抽卡的是形式,锁死的是真实</footer>
+</div>
+</body>
+</html>
