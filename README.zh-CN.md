@@ -6,6 +6,7 @@
 [![Works with](https://img.shields.io/badge/%E6%94%AF%E6%8C%81-Claude%20Code%20·%20Codex%20·%20OpenClaw-FFC93C?style=for-the-badge)](#安装)
 [![Release](https://img.shields.io/github/v/release/fade2373/gacha-ui?style=for-the-badge&color=35D07F)](https://github.com/fade2373/gacha-ui/releases)
 [![License](https://img.shields.io/badge/License-MIT-64748b?style=for-the-badge)](./LICENSE)
+[![Site](https://img.shields.io/badge/▶%20看宣传片-fade2373.github.io%2Fgacha--ui-FF4A4A?style=for-the-badge)](https://fade2373.github.io/gacha-ui/)
 
 <p align="center">
   <img src="./promo/cover-cn.png" alt="gacha-ui 封面" width="340" />
