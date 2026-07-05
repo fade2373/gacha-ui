@@ -35,7 +35,8 @@
 ## 演示
 
 <p align="center">
-  <img src="./promo/preview.gif" alt="gacha-ui — 一次出 5 个版本,你来挑" width="340" />
+  <img src="./promo/preview.gif" alt="gacha-ui — 一次出 5 个版本" width="340" />
+  <img src="./promo/preview-pick.gif" alt="gacha-ui — 6 个真实方向,指认锁定" width="340" />
 </p>
 
 完整宣传片(45s,中文,3:4 竖版;英文版后续放出):

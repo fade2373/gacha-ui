@@ -35,7 +35,8 @@
 ## Demo
 
 <p align="center">
-  <img src="./promo/preview.gif" alt="gacha-ui — deal 5 versions, you pick" width="340" />
+  <img src="./promo/preview.gif" alt="gacha-ui — deal 5 versions" width="340" />
+  <img src="./promo/preview-pick.gif" alt="gacha-ui — 6 real directions, point and lock" width="340" />
 </p>
 
 Full promo video (45s, Chinese, 3:4 — English version coming):
