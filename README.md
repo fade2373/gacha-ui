@@ -9,7 +9,14 @@
 [![Site](https://img.shields.io/badge/▶%20Watch%20the%20promo-fade2373.github.io%2Fgacha--ui-FF4A4A?style=for-the-badge)](https://fade2373.github.io/gacha-ui/)
 
 <p align="center">
-  <img src="./promo/cover-cn.png" alt="gacha-ui cover" width="340" />
+  <a href="https://fade2373.github.io/gacha-ui/">
+    <img src="./docs/landing-shot.png" alt="gacha-ui landing — click to watch the promo" width="720" />
+  </a>
+  <br/>
+  <sub><b>▲ Click to open the site & watch the 45s promo</b></sub>
+</p>
+
+<p align="center">
   <img src="./promo/preview.gif" alt="gacha-ui — deal 5 versions, you pick" width="340" />
 </p>
 

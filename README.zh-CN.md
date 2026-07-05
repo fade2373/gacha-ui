@@ -9,7 +9,14 @@
 [![Site](https://img.shields.io/badge/▶%20看宣传片-fade2373.github.io%2Fgacha--ui-FF4A4A?style=for-the-badge)](https://fade2373.github.io/gacha-ui/)
 
 <p align="center">
-  <img src="./promo/cover-cn.png" alt="gacha-ui 封面" width="340" />
+  <a href="https://fade2373.github.io/gacha-ui/">
+    <img src="./docs/landing-shot.png" alt="gacha-ui 在线主页 — 点击看宣传片" width="720" />
+  </a>
+  <br/>
+  <sub><b>▲ 点击打开在线主页,看 45s 宣传片</b></sub>
+</p>
+
+<p align="center">
   <img src="./promo/preview.gif" alt="gacha-ui — 一次出 5 个版本,你来挑" width="340" />
 </p>
 
