@@ -10,7 +10,7 @@
 [![License](https://img.shields.io/badge/License-MIT-64748b?style=for-the-badge)](./LICENSE)
 
 <a href="https://fade2373.github.io/gacha-ui/">
-  <img src="./docs/landing-shot.png" alt="gacha-ui — click to open the site and watch the 45s promo" width="680" />
+  <img src="./docs/hero.png" alt="gacha-ui — click to open the site and watch the 45s promo" />
 </a>
 <br/>
 <sub><b>▲ Click to open the site & watch the 45s promo</b></sub>
