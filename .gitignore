@@ -1,0 +1,10 @@
+.DS_Store
+node_modules/
+# promo 工作目录(合成工程/素材/中间渲染)不入库,只保留成片
+promo/hf/
+promo/hf-how/
+promo/hf-cn/
+promo/.gacha/
+promo/audio/
+promo/final/
+promo/.gitignore

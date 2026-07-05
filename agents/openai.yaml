@@ -1,0 +1,7 @@
+interface:
+  display_name: "Gacha UI"
+  short_description: "Explore UI directions via parallel mockups you pick side-by-side"
+  brand_color: "#0b0d12"
+  default_prompt: "Use $gacha-ui to explore several genuinely-different directions for this UI, serve them side-by-side, and narrow round by round from my picks."
+policy:
+  allow_implicit_invocation: true
